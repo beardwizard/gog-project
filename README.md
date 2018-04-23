@@ -19,3 +19,5 @@ Or if you have [gulp-cli](https://www.npmjs.com/package/gulp-cli) installed in g
 gulp serve
 gulp serve:dist
 ```
+
+Then navigate to http://localhost:3000 to see project in action.
