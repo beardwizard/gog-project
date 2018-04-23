@@ -1,4 +1,4 @@
-# gog-project
+# gog-project by Mateusz Golonka
 Frontend Recruitment Task
 
 ## Setup
