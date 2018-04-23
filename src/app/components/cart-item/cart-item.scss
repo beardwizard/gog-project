@@ -1,0 +1,55 @@
+.cart-item-wrapper {
+  width: 370px;
+  height: 60px;
+  padding: 5px;
+
+  display: inline-flex;
+
+  font-size: 14px;
+  font-family: "Source Sans Pro";
+  color: rgb(33, 33, 33);
+  line-height: 1.2;
+}
+.info {
+  width: 200px;
+  margin-right: 20px;
+  padding: 12px 0;
+}
+.info .title {
+  text-transform: uppercase;
+}
+.info .title p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+.info .actions {
+  margin-top: -5px;
+  font-size: 12px;
+  text-decoration: underline;
+  line-height: 1;
+}
+
+.remove p {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 13px;
+  color: rgba(64, 64, 64, 0.75);
+}
+
+.cart-item-wrapper .img {
+  width: 100px;
+  height: 60px;
+  margin-right: 10px;
+  background-image: url("/app/components/product/img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,11 @@
+<div class="component">
+  <div class="product-wrapper">
+    <div class="product-image" ng-style="{'background-image': 'url(/app/images/' + $ctrl.imgSrc +')'}"></div>
+    <div class="product-details" ng-class="$ctrl.defaultViewClass">
+      <div class="product-name">
+        <p>{{$ctrl.title}}</p>
+      </div>
+      <product-price class="product-price" productid="$ctrl.productid"></product-price>
+    </div>
+  </div>
+</div>

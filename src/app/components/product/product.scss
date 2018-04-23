@@ -1,0 +1,35 @@
+.product-wrapper {
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.15);
+    width: 196px;
+    height: 188px;
+}
+
+.product-image {
+  background-image: url("/app/components/product/img.png");
+  background-size: contain;
+  height: 110px;
+}
+
+.product-name {
+  height: 35px;
+  font-size: 14px;
+  font-family: "Source Sans Pro";
+  color: rgb(33, 33, 33);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 10px 10px 0;
+}
+.product-name p {
+  margin: 0;
+}
+
+.product-price {
+  float: right;
+  margin-right: 8px;
+}
+
+.product-details.owned {
+  opacity: 0.5;
+}

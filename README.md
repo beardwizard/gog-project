@@ -3,7 +3,14 @@ Frontend Recruitment Task
 
 ## Setup
 
-Using [npm](https://www.npmjs.com/) script:
+First, clone or download this repository.
+In the command line (cmd) go to project's directory.
+Then, using [npm](https://www.npmjs.com/) script install modules:
+```bash
+npm i
+```
+
+## Launch
 
 To launch a browser sync server on source files
 ```bash
