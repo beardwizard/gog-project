@@ -1,0 +1,20 @@
+<div class="component">
+  <div class="cart-item-wrapper"
+    ng-mouseover="$ctrl.onMouseOver($event)"
+    ng-mouseleave="$ctrl.onMouseLeave($event)">
+    <div class="img" ng-style="{'background-image': 'url(/app/images/' + $ctrl.imgSrc +')'}"></div>
+    <div class="info">
+      <div class="title">
+        <p>{{$ctrl.title}}</p>
+      </div>
+      <div class="actions">
+        <div class="remove" ng-class="$ctrl.removeViewClass" ng-click="$ctrl.removeItem()">
+          <p>{{$ctrl.removeText}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="price">
+      <p>$ {{$ctrl.price}}</p>
+    </div>
+  </div>
+</div>

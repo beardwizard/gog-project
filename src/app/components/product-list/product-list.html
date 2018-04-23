@@ -1,0 +1,14 @@
+<div class="component">
+  <div class="gotw-title">
+    <p>{{$ctrl.gotwTitle}}</p>
+  </div>
+  <div class="gotw-wrapper">
+    <button class="btn btn-green-grad secret-btn">
+      {{$ctrl.secretBtnText}}
+    </button>
+    <div class="gotw-img"></div>
+  </div>
+  <div class="product-list">
+    <product ng-repeat="product in $ctrl.productIds" productid="product"></product>
+  </div>
+</div>

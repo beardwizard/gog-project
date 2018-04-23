@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "oddworld: stranger's wrath",
+    "imgSrc": "img1.png",
+    "originalPrice": 19.99,
+    "currentPrice": 9.99,
+    "discount": 50
+  },
+  {
+    "id": 2,
+    "name": "chaos on deponia",
+    "imgSrc": "img2.png",
+    "originalPrice": 9.99,
+    "currentPrice": 9.99,
+    "discount": 0
+  },
+  {
+    "id": 3,
+    "name": "the settlers 2: gold edition",
+    "imgSrc": "img3.png",
+    "originalPrice": 9.99,
+    "currentPrice": 5.99,
+    "discount": 40
+  },
+  {
+    "id": 4,
+    "name": "neverwinter nights",
+    "imgSrc": "img4.png",
+    "originalPrice": 9.99,
+    "currentPrice": 4.99,
+    "discount": 50
+  },
+  {
+    "id": 5,
+    "name": "assassin's creed: director's cut",
+    "imgSrc": "img5.png",
+    "originalPrice": 24.99,
+    "currentPrice": 9.99,
+    "discount": 60
+  }
+]

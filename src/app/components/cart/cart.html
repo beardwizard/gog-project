@@ -1,0 +1,41 @@
+<div class="component">
+  <div class="cart-wrapper"
+    ng-mouseleave="$ctrl.onWrapperMouseLeave()"
+    ng-mouseenter="$ctrl.onWrapperMouseEnter()">
+    <div class="cart-btn no-select"
+      ng-class="$ctrl.cartBtnViewClass"
+      ng-click="$ctrl.onCartButtonClick()">
+      <div class="icon"></div>
+      <div class="qty">
+        <p>{{$ctrl.numOfIems}}</p>
+      </div>
+    </div>
+
+    <div class="shadow-overview" ng-class="$ctrl.cartItemsOverviewClass">
+      <div class="cart-items" ng-class="$ctrl.cartItemsViewClass">
+        <div class="panel">
+          <div class="num-items">
+            <p>{{$ctrl.numOfIems}} {{$ctrl.numItemsText}}</p>
+          </div>
+          <div class="total-price" ng-click="$ctrl.onTotalPriceClick()">
+            <p>$ {{$ctrl.totalPrice}}</p>
+          </div>
+          <div class="btn btn-big btn-purple-grad clear-cart no-select"
+            ng-click="$ctrl.onClearCartButtonClick()">
+            <p>{{$ctrl.clearCartText}}</p>
+          </div>
+        </div>
+
+        <div class="items-list">
+          <cart-item ng-repeat="item in $ctrl.items" productid="item"></cart-item>
+        </div>
+      </div>
+      <div class="cart-empty" ng-class="$ctrl.cartEmptyViewClass">
+        <div class="icon"></div>
+        <div class="message">
+          <p>{{$ctrl.emptyCartText}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

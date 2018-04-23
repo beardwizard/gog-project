@@ -1,0 +1,47 @@
+.gotw-wrapper {
+  width: 1060px;
+  text-align: center;
+}
+
+.gotw-title {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Source Sans Pro";
+  color: rgb(38, 38, 38);
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.gotw-title p {
+  width: max-content;
+}
+
+.gotw-img {
+  width: 1060px;
+  height: 370px;
+  background-image: url("/app/images/bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 22px;
+}
+
+.product-list {
+  width: 1068px;
+  height: 190px;
+  overflow: hidden;
+  display: inline-flex;
+  padding-left: 4px;
+  margin-left: -4px;
+}
+.product-list product {
+  margin-right: 20px;
+}
+
+.secret-btn {
+  position: fixed;
+  top: 220px;
+  left: 344px;
+  z-index: -1;
+  padding: 10px 20px;
+}
