@@ -10,13 +10,6 @@ const PURCHASED_PRODUCT_IDS = 'purchased-product-ids';
 class History {
 
   /**
-   * @ngInject
-   *
-   * @constructor
-   */
-  constructor() { }
-
-  /**
    * returns data from localStorage
    *
    * @method getItem

@@ -6,6 +6,7 @@
 }
 
 .product-image {
+  display: block;
   background-image: url("/app/components/product/img.png");
   background-size: contain;
   height: 110px;
@@ -14,15 +15,16 @@
 .product-name {
   height: 35px;
   font-size: 14px;
-  font-family: "Source Sans Pro";
-  color: rgb(33, 33, 33);
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
   margin: 10px 10px 0;
 }
-.product-name p {
+.product-name a {
   margin: 0;
+  text-decoration: none;
+  color: rgb(33, 33, 33);
 }
 
 .product-price {

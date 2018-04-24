@@ -71,12 +71,11 @@ class Store {
    * @private
    */
   private _updateProducts(response: any): void {
-    let i,
-        data = response.data,
+    let data = response.data,
         dataLength = Object.keys(data).length,
         products: Product[] = [];
 
-    for (i = 0; i < dataLength; i++) {
+    for (let i = 0; i < dataLength; i++) {
       products.push(Product.fromJSON(data[i]));
     }
     this.products = products;
@@ -122,11 +121,7 @@ class Store {
    * @private
    */
   private _getProduct(id: number): Product {
-    let i,
-        productsLength;
-
-    productsLength = this.products.length;
-    for (i = 0; i < productsLength; i++) {
+    for (let i = 0; i < this.products.length; i++) {
       if (this.products[i].getId() === id) {
         return this.products[i];
       }
@@ -144,17 +139,14 @@ class Store {
    * @private
    */
   private _getProducts(ids: number[]): Product[] {
-    let i,
-        product,
-        products = [],
-        idsLength;
+    let product,
+        products: Product[] = [];
 
     if (!ids) {
       return this.products;
     }
 
-    idsLength = ids.length;
-    for (i = 0; i < idsLength; i++) {
+    for (let i = 0; i < ids.length; i++) {
       product = this._getProduct(ids[i]);
       if (product) {
         products.push(product);
@@ -186,12 +178,9 @@ class Store {
    * @private
    */
   private _getProductIds(): number[] {
-    let i,
-        productsLength,
-        ids: number[] = [];
+    let ids: number[] = [];
 
-    productsLength = this.products.length;
-    for (i = 0; i < productsLength; i++) {
+    for (let i = 0; i < this.products.length; i++) {
       ids.push(this.products[i].getId());
     }
 

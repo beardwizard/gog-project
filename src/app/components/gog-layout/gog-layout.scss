@@ -10,12 +10,6 @@
 }
 
 .content {
-  height: -webkit-fill-available;
-  background-color: rgb(194, 194, 194);
-  background: linear-gradient(180deg, #b9b4c0 0%, #c2c2c2 40%);
-}
-
-.content > .ng-isolate-scope > div:first-of-type {
   width: 1060px;
   margin: 0 auto;
   padding-top: 25px;

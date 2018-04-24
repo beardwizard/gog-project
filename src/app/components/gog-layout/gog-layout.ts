@@ -30,5 +30,6 @@ class GogLayoutController {
 
 export const gogLayout = {
   template: require('./gog-layout.html'),
-  controller: GogLayoutController
+  controller: GogLayoutController,
+  transclude: true
 };

@@ -1,9 +1,9 @@
 <div class="component">
-  <div class="price-wrapper" ng-class="$ctrl.defaultViewClass" ng-click="$ctrl.addToCart()">
+  <div class="price-wrapper" ng-class="$ctrl.defaultViewClass">
     <div ng-class="$ctrl.discountViewClass" class="discount btn btn-small btn-green">
       <p>-{{$ctrl.discount}}%</p>
     </div>
-    <div class="price btn btn-small">
+    <div class="price btn btn-small" ng-click="$ctrl.addToCart()">
       <p>$ {{$ctrl.price}}</p>
     </div>
   </div>
