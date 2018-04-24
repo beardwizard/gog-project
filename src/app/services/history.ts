@@ -125,7 +125,7 @@ class History {
    * @public
    */
   public setCartProductIds(productIds: number[]): void {
-    return this.setProductIds(CART_PRODUCT_IDS, productIds);
+    this.setProductIds(CART_PRODUCT_IDS, productIds);
   }
 
   /**
@@ -148,7 +148,7 @@ class History {
    * @public
    */
   public setPurchasedProductIds(productIds: number[]): void {
-    return this.setProductIds(PURCHASED_PRODUCT_IDS, productIds);
+    this.setProductIds(PURCHASED_PRODUCT_IDS, productIds);
   }
 }
 
