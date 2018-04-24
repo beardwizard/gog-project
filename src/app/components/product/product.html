@@ -1,9 +1,9 @@
 <div class="component">
   <div class="product-wrapper">
-    <div class="product-image" ng-style="{'background-image': 'url(/app/images/' + $ctrl.imgSrc +')'}"></div>
+    <a href class="product-image" ng-style="{'background-image': 'url(/app/images/' + $ctrl.imgSrc +')'}"></a>
     <div class="product-details" ng-class="$ctrl.defaultViewClass">
       <div class="product-name">
-        <p>{{$ctrl.title}}</p>
+        <a href>{{$ctrl.title}}</a>
       </div>
       <product-price class="product-price" productid="$ctrl.productid"></product-price>
     </div>

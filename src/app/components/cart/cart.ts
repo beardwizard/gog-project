@@ -404,13 +404,9 @@ class CartController {
    * @private
    */
   private _calcTotalPrice(products: Product[]): void {
-    let i,
-        productsLength;
-
     this.totalPrice = 0;
 
-    productsLength = products.length;
-    for (i = 0; i < productsLength; i++) {
+    for (let i = 0; i < products.length; i++) {
       this.totalPrice += products[i].getCurrentPrice();
     }
     this.$scope.$apply(); // to refresh view

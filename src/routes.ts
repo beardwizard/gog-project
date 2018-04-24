@@ -6,8 +6,8 @@ function routesConfig($stateProvider: angular.ui.IStateProvider, $urlRouterProvi
   $urlRouterProvider.otherwise('/');
 
   $stateProvider
-    .state('gogLayout', {
+    .state('productList', {
       url: '/',
-      component: 'gogLayout'
+      component: 'productList'
     });
 }

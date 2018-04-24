@@ -1,14 +1,15 @@
 .gotw-wrapper {
   width: 1060px;
   text-align: center;
+  position: relative;
 }
 
 .gotw-title {
   display: inline-block;
   font-size: 15px;
-  font-family: "Source Sans Pro";
+  font-family: 'Source Sans Pro', sans-serif;
   color: rgb(38, 38, 38);
-  font-weight: bold;
+  font-weight: 900;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -39,9 +40,11 @@
 }
 
 .secret-btn {
-  position: fixed;
-  top: 220px;
-  left: 344px;
+  position: absolute;
   z-index: -1;
   padding: 10px 20px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

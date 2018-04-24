@@ -143,11 +143,7 @@ class ProductController {
    * @private
    */
   private onPurchase(productIds: number[]): void {
-    let i,
-        productIdsLength;
-
-    productIdsLength = productIds.length;
-    for (i = 0; i < productIdsLength; i++) {
+    for (let i = 0; i < productIds.length; i++) {
       if (this.productid === productIds[i]) {
         this.defaultViewClass = 'owned';
         return;

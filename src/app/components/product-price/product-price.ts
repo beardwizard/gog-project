@@ -25,7 +25,7 @@ class ProductPriceController {
    * @property {number} productid
    * @private
    */
-  public productid: number;
+  private productid: number;
 
   /**
    * discount of a product
@@ -33,7 +33,7 @@ class ProductPriceController {
    * @property {number} discount
    * @private
    */
-  public discount: number;
+  private discount: number;
 
   /**
    * price of a product
@@ -41,7 +41,7 @@ class ProductPriceController {
    * @property {number} price
    * @private
    */
-  public price: number;
+  private price: number;
 
   /**
    * state of a product
@@ -49,7 +49,7 @@ class ProductPriceController {
    * @property {price_state} state
    * @private
    */
-  public state: price_state;
+  private state: price_state;
 
   /**
    * style class for price wrapper view
@@ -57,7 +57,7 @@ class ProductPriceController {
    * @property {string} defaultViewClass
    * @private
    */
-  public defaultViewClass: string;
+  private defaultViewClass: string;
 
   /**
    * style class for in-cart view
@@ -65,7 +65,7 @@ class ProductPriceController {
    * @property {string} inCartViewClass
    * @private
    */
-  public inCartViewClass: string;
+  private inCartViewClass: string;
 
   /**
    * style class for owned view
@@ -73,7 +73,7 @@ class ProductPriceController {
    * @property {string} ownedViewClass
    * @private
    */
-  public ownedViewClass: string;
+  private ownedViewClass: string;
 
   /**
    * style class for discount view
@@ -81,7 +81,7 @@ class ProductPriceController {
    * @property {string} discountViewClass
    * @private
    */
-  public discountViewClass: string;
+  private discountViewClass: string;
 
   /**
    * text of 'own' placeholder
@@ -89,7 +89,7 @@ class ProductPriceController {
    * @property {string} ownedText
    * @private
    */
-  public ownedText: string;
+  private ownedText: string;
 
   /**
    * text of 'in cart' placeholder
@@ -97,7 +97,7 @@ class ProductPriceController {
    * @property {string} inCartText
    * @private
    */
-  public inCartText: string;
+  private inCartText: string;
 
   /**
    * @ngInject
@@ -204,11 +204,7 @@ class ProductPriceController {
    * @private
    */
   private updateState(productIds: number[], state: price_state): void {
-    let i,
-        productIdsLength;
-
-    productIdsLength = productIds.length;
-    for (i = 0; i < productIdsLength; i++) {
+    for (let i = 0; i < productIds.length; i++) {
       if (this.productid === productIds[i]) {
         this.setState(state);
         this.$scope.$apply(); // to refresh view
@@ -301,7 +297,7 @@ class ProductPriceController {
   }
 
   /**
-   * sets proper state when product has been purchasedProductIds 
+   * sets proper state when product has been purchasedProductIds
    *
    * @method onPurchase
    * @param {number[]} productIds
@@ -309,11 +305,7 @@ class ProductPriceController {
    * @private
    */
   private onPurchase(productIds: number[]): void {
-    let i,
-        productIdsLength;
-
-    productIdsLength = productIds.length;
-    for (i = 0; i < productIdsLength; i++) {
+    for (let i = 0; i < productIds.length; i++) {
       if (this.productid === productIds[i]) {
         this.setState(price_state.OWNED);
         return;
