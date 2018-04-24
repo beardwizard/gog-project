@@ -1,6 +1,13 @@
 # gog-project by Mateusz Golonka
 Frontend Recruitment Task
 
+## Requirement Node 6+ && NPM 3+
+
+For this project to work you need Node >= 6.0.0 and NPM => 3.0.0. You can check your version number with the command
+```bash
+node --version && npm --version
+```
+
 ## Setup
 
 First, clone or download this repository.
