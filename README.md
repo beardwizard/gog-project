@@ -28,3 +28,9 @@ gulp serve:dist
 ```
 
 Then navigate to http://localhost:3000 to see project in action.
+
+## Additional Features
+
+- To purchase products click the cart's total price (left from the 'clear cart' button).
+- History has been implemented: state of the cart and products is saved in the browser.
+- To clear the history (for testing purpose) click the 'gog com' icon and refresh page.
